@@ -1,14 +1,1 @@
-[
-  {
-    "timestamp": "2025-03-11T02:37:14.594196",
-    "video_file": "recordings/recording_20250311_023434.mp4",
-    "keyframe_files": [
-      "keyframes/keyframe_20250311_023449_250.jpg",
-      "keyframes/keyframe_20250311_023449_0.jpg"
-    ],
-    "analyses": [
-      "这幅图片显示了一台电脑屏幕，上面打开了多个程序窗口。主要焦点是两个文本编辑器和一个终端控制台的界面。\n\n在左侧是一个名为“myrewind”的Python集成开发环境（IDE），“myrewind”被用于浏览不同的文件和目录结构。这些包括`py_cache`, `keyframes`, `recording`, `recording_analyzer.py`, `README.md`, 和几个JSON配置文件，比如`recording_metadata.json`、`screen_recorder.py`和其他相关文件。\n\n在右侧的终端控制台上显示了一个Python脚本“screen_recorder.py”正在运行，并且有一个警告信息提示代码行数错误。窗口顶部显示了程序的状态栏，包括当前时间和日期（3月11日星期四，2:04 AM），还有其他状态图标和系统菜单。\n\n屏幕右侧边缘的用户界面表明这是一个Mac操作系统，可能是macOS Catalina或更高版本，因为底部有一排应用程序快捷方式，如Finder、Safari浏览器、邮件应用等。这些图标是典型的早期macOS设计风格，而不是当前macOS Mojave以上的圆角窗口设计。\n\n整体图片显示了一个开发者可能正在进行编码和测试屏幕录制脚本的工作环境。",
-      "这幅图片显示了一台运行多个窗口和标签的计算机屏幕，表明在进行编码或软件开发工作。主要窗口是Visual Studio Code编辑器，在其中可以看到打开文件如'recording_metadata.json'、'screen_recorder.py 1, U'等，并包含各种代码行与注释。屏幕顶部的任务栏包括常见的Windows应用程序图标。\n\n旁边的终端显示了一个名为'screenRecorder'的Python脚本的输出，提示这是一个用于录制视频的应用程序。终端窗口还展示了一些错误和警告消息，比如关于AVCaptureScreenInput被未链接到框架的消息以及配置视图模式失败的信息。\n\n此外，屏幕右侧有一个由TikTok应用程序提供的弹出式通知，提到了与NVMe驱动器相关的内容。\n\n整体环境表明这是一个专业或学术设置，在这里编码、调试代码，并可能在开发过程中的某个阶段测试软件。"
-    ]
-  }
-]
+[]
