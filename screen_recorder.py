@@ -132,13 +132,19 @@ class ScreenRecorder:
         
         # 构建ffmpeg命令
         command = [
-            'ffmpeg', '-f', 'avfoundation',
-            '-capture_cursor', '1',  # 捕获鼠标光标
-            '-capture_mouse_clicks', '1',  # 捕获鼠标点击
-            '-i', '0',  # 在macOS上，0代表屏幕捕获
+            'ffmpeg', 
+            '-f', 'avfoundation',
+            '-capture_cursor', '1',
+            '-capture_mouse_clicks', '1',
+            '-framerate', '30',  # 帧率参数必须放在输入设备前
+            '-video_size', '1280x720',  # 明确指定分辨率
+            '-i', '0', 
             '-c:v', 'libx264',
             '-preset', 'ultrafast',
-            '-y',  # 覆盖已存在的文件
+            '-vsync', 'cfr',
+            '-fps_mode', 'cfr',
+            '-pix_fmt', 'yuv420p',
+            '-vf', 'scale=1280:720'  # 确保缩放滤镜在输出参数区
         ]
 
         if duration:
@@ -288,4 +294,4 @@ def main():
                 recorder.process_recording(recorder.current_video_file)
 
 if __name__ == "__main__":
-    main() 
+    main()
